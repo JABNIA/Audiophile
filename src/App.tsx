@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Routes, Route, HashRouter} from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import ProductPresentation from './components/ProductPresentation';
 import Headphones from './components/Headphones';
 import {AudiophileContext} from './components/Context';import Speakers from './components/Speakers';
@@ -130,9 +130,9 @@ function App() {
           <Routes>
             <Route path='/' element={<Layout />} >
               <Route index element={<ProductPresentation />} />  
-              <Route path="headphones" element={<Headphones />} />  
-              <Route path="earphones" element={<Earphones />} />  
-              <Route path="speakers" element={<Speakers />} />  
+              <Route path='headphones' element={<Headphones />} />  
+              <Route path='earphones' element={<Earphones />} />  
+              <Route path='speakers' element={<Speakers />} />  
             </Route>
           </Routes>    
         </HashRouter>
