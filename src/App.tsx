@@ -125,7 +125,7 @@ function App() {
   checkOut ? document.body.style.backgroundColor = "#F1F1F1"  : document.body.style.backgroundColor = "#FFFFFF"
   return (
     <>
-    <HashRouter basename='/audiophile/'>
+    <HashRouter>
       <AudiophileContext.Provider value={data}>
       <Routes>
         <Route path='/audiophile' element={<Layout />} >
