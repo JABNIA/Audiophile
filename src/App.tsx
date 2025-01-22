@@ -125,18 +125,18 @@ function App() {
   checkOut ? document.body.style.backgroundColor = "#F1F1F1"  : document.body.style.backgroundColor = "#FFFFFF"
   return (
     <>
-    <HashRouter>
       <AudiophileContext.Provider value={data}>
-      <Routes>
-        <Route path='/audiophile' element={<Layout />} >
-          <Route index element={<ProductPresentation />} />  
-          <Route path="headphones" element={<Headphones />} />  
-          <Route path="earphones" element={<Earphones />} />  
-          <Route path="speakers" element={<Speakers />} />  
-        </Route>
-      </Routes>    
+        <HashRouter basename='/audiophile/'>
+          <Routes>
+            <Route path='/' element={<Layout />} >
+              <Route index element={<ProductPresentation />} />  
+              <Route path="headphones" element={<Headphones />} />  
+              <Route path="earphones" element={<Earphones />} />  
+              <Route path="speakers" element={<Speakers />} />  
+            </Route>
+          </Routes>    
+        </HashRouter>
       </AudiophileContext.Provider>
-    </HashRouter>
     </>
     )
   }
