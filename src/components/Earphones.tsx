@@ -12,7 +12,7 @@ export default function Earphones(){
         <ProductPage id={context.productId}/>
         :
         <>
-        <ProductWrapper bgImage={". /assets/product-yx1-earphones/desktop/image-product.jpg"}>
+        <ProductWrapper bgImage={"./assets/product-yx1-earphones/desktop/image-product.jpg"}>
             <div className="headphone-image">
                 
             </div>
