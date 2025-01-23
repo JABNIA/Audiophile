@@ -126,7 +126,7 @@ function App() {
   return (
     <>
       <AudiophileContext.Provider value={data}>
-        <HashRouter basename='/audiophile/'>
+        <HashRouter>
           <Routes>
             <Route path='/' element={<Layout />} >
               <Route index element={<ProductPresentation />} />  
