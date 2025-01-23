@@ -1461,7 +1461,7 @@ Please change the parent <Route path="${b}"> to <Route path="${b==="/"?"*":`${b}
         }
     }
 
-`;function $y(){const r=Ut();return r.selected?f.jsx(hu,{id:r.productId}):f.jsx(f.Fragment,{children:f.jsxs(Uy,{bgImage:". /assets/product-yx1-earphones/desktop/image-product.jpg",children:[f.jsx("div",{className:"headphone-image"}),f.jsxs("div",{className:"info",children:[f.jsx("p",{className:"anonce",children:"NEW PRODUCT"}),f.jsx("p",{className:"product-name",children:"YX1 WIRELESS EARPHONES"}),f.jsx("p",{className:"prod-desc",children:"Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature."}),f.jsx(Kt,{className:"seeButton",onClick:()=>{r.setProductId(1),r.setProductSelected(!0)},children:"SEE PRODUCT"})]})]})})}const Uy=ke.div`
+`;function $y(){const r=Ut();return r.selected?f.jsx(hu,{id:r.productId}):f.jsx(f.Fragment,{children:f.jsxs(Uy,{bgImage:"./assets/product-yx1-earphones/desktop/image-product.jpg",children:[f.jsx("div",{className:"headphone-image"}),f.jsxs("div",{className:"info",children:[f.jsx("p",{className:"anonce",children:"NEW PRODUCT"}),f.jsx("p",{className:"product-name",children:"YX1 WIRELESS EARPHONES"}),f.jsx("p",{className:"prod-desc",children:"Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature."}),f.jsx(Kt,{className:"seeButton",onClick:()=>{r.setProductId(1),r.setProductSelected(!0)},children:"SEE PRODUCT"})]})]})})}const Uy=ke.div`
     width: 1110px;
     height: 560px;
     display: flex;
