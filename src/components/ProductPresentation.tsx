@@ -6,7 +6,7 @@ export default function ProductPresentation(){
     return (
         <PresentationWrapper>
         <ZX9>
-            <ProductImage src={"./public/assets/home/desktop/image-speaker-zx9.png"}/>
+            <ProductImage src={"./assets/home/desktop/image-speaker-zx9.png"}/>
         <ProductPresentationDescription>
             <p className="product-name">ZX9 SPEAKER</p>
             <p>Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
