@@ -147,7 +147,6 @@ const Product = styled.div<{bgImage:string}>`
         margin-top: 120px;
         
         .name{
-            font-family: Manrope;
             font-size: 40px;
             font-weight: 700;
             line-height: 44px;
@@ -157,7 +156,6 @@ const Product = styled.div<{bgImage:string}>`
         }
 
         .desc{
-            font-family: Manrope;
             font-size: 15px;
             font-weight: 400;
             line-height: 25px;
@@ -166,7 +164,6 @@ const Product = styled.div<{bgImage:string}>`
             color: #00000075;
         }
         .price{
-            font-family: Manrope;
             font-size: 18px;
             font-weight: 700;
             line-height: 24.59px;
@@ -201,7 +198,6 @@ const Product = styled.div<{bgImage:string}>`
             margin-top: 78px;
 
             .name{
-                font-family: Manrope;
                 font-size: 28px;
                 font-weight: 700;
                 line-height: 32px;
@@ -211,7 +207,6 @@ const Product = styled.div<{bgImage:string}>`
             }
 
             .desc{
-                font-family: Manrope;
                 font-size: 15px;
                 font-weight: 500;
                 line-height: 25px;
@@ -219,7 +214,6 @@ const Product = styled.div<{bgImage:string}>`
                 margin-bottom: 32px;
             }
             .price{
-                font-family: Manrope;
                 font-size: 18px;
                 font-weight: 700;
                 line-height: 24.59px;
@@ -250,7 +244,6 @@ const Product = styled.div<{bgImage:string}>`
             margin-top: 78px;
 
             .name{
-                font-family: Manrope;
                 font-size: 28px;
                 font-weight: 700;
                 line-height: 38.25px;
@@ -259,7 +252,6 @@ const Product = styled.div<{bgImage:string}>`
             }
 
             .desc{
-                font-family: Manrope;
                 font-size: 15px;
                 font-weight: 400;
                 line-height: 25px;
@@ -267,7 +259,6 @@ const Product = styled.div<{bgImage:string}>`
 
             }
             .price{
-                font-family: Manrope;
                 font-size: 18px;
                 font-weight: 700;
                 line-height: 24.59px;
@@ -452,7 +443,6 @@ const Features = styled.div`
     }
 
     .included{
-        font-family: Manrope;
         font-size: 15px;
         font-weight: 400;
         line-height: 25px;
@@ -489,7 +479,6 @@ const Features = styled.div`
         width: 327px;
         height: auto;
         display: block;
-        font-family: Manrope;
         font-size: 15px;
         font-weight: 400;
         line-height: 25px;
@@ -508,13 +497,10 @@ const Features = styled.div`
         .included{
             margin-top: 0px;
             margin-bottom: 8px;
-            font-family: Manrope;
             font-size: 15px;
             font-weight: 400;
             line-height: 25px;
             text-align: left;
-
         }
-
     }
 `

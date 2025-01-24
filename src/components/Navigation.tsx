@@ -87,11 +87,12 @@ const NavigationWrapper = styled.div<{selected:boolean}>`
 
     }
 
-    ul > li {
+    ul  a {
         cursor: pointer;
-    }
+        color: #FFF;
+    }   
 
-    ul > li:hover {
+    ul  a:hover {
         color: #D87D4A;
     }
 

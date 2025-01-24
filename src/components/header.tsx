@@ -2,28 +2,65 @@ import styled from "styled-components"
 import Navigation from "./Navigation"
 import usePageContext from "./Context"
 import useScreenSize from "./customHooks/useScreenSize"
+import { useLocation } from "react-router-dom"
 
 
 export default function Header(){
   const context = usePageContext()  
   const screenSize = useScreenSize()
-  
+  const {pathname} = useLocation()
   
   
   return (
-        <HeaderWrapper  selected={context.selected} checkout={context.checkOut} screen={screenSize.width} id="header">
+        <HeaderWrapper pathname={pathname} selected={context.selected} checkout={context.checkOut} screen={screenSize.width} id="header">
           <Navigation />
+          {
+           pathname === "/" ? 
+                <NewProductDescription>
+                    <h4>
+                    NEW PRODUCT
+                    </h4>
+                    <p className='productName'>
+                    XX99 MARK ll HEADPHONES
+                    </p>
+                    <p>
+                    Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.
+                    </p>
+                    <Button className="newProductButton">SEE PRODUCT</Button>
+                    
+                </NewProductDescription>
+            :
+            null
+            }
+            {
+              pathname === "/headphones" ?
+              <h1>HEADPHONES</h1>
+              :
+              null
+            }
+            {
+              pathname === "/speakers" ?
+              <h1>SPEAKERS</h1>
+              :
+              null
+            }
+            {
+              pathname === "/earphones" ?
+              <h1>EARPHONES</h1>
+              :
+              null
+            }
         </HeaderWrapper>
     )
 }
 
 
-const HeaderWrapper = styled.header<{selected: boolean, checkout: boolean, screen: number}>`
+const HeaderWrapper = styled.header<{pathname:string, selected: boolean, checkout: boolean, screen: number}>`
   width: 1440px;
-  background-size: cover;
-  background-repeat: no-repeat;
+  height: ${props => props.pathname === "/" ? "729px" : "336px"};
   border-radius: 5px;
   margin: auto;
+  background: ${props => props.pathname === "/" ? "url('./assets/home/desktop/image-header.jpg') no-repeat center / cover" : "#101010"};
 
   h1{
     text-align: center;
@@ -44,14 +81,15 @@ const HeaderWrapper = styled.header<{selected: boolean, checkout: boolean, scree
   @media (max-width: 768px){
     width: 375px;
     background-size: cover;
-    background-position:center
+    background-position:center;
   }
 `
+
 
 export const NewProductDescription = styled.div`
   width: 398px;
   height: 346px;
-  margin: 100px 170px;
+  margin-left: 165px;
   padding-top: 20px;
   
   h4{

@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { Button, NewProductDescription } from "./header"
+import { Button} from "./header"
 import ProductPage from "./ProductPage";
 import usePageContext from "./Context";
 
@@ -13,19 +13,6 @@ export default function Headphones(){
         <ProductPage id={context.productId}/>
         :
         <>
-        <NewProductDescription>
-          <h4>
-            NEW PRODUCT
-          </h4>
-          <p className='productName'>
-            XX99 MARK ll HEADPHONES
-          </p>
-          <p>
-            Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.
-          </p>
-          <Button className="newProductButton">SEE PRODUCT</Button>
-          
-        </NewProductDescription>
         <ProductWrapper bgImage={"./assets/product-xx99-mark-two-headphones/desktop/image-product.jpg"}>
             <div className="headphone-image">
                 

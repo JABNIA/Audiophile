@@ -73,6 +73,21 @@ const ShopSelection = styled.div`
     margin-top: 80px;
   }
 
+  ul a {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 17.76px;
+    letter-spacing: 1px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #000;
+  }
+
+  ul a:hover {
+    color: #D87D4A;
+  }
+
   @media (max-width: 1440px){
     width: 689px;
     height: 217px;
@@ -137,7 +152,6 @@ const TextWrapper = styled.div`
 
   h4{
     margin-top: 20px;
-    font-family: Manrope;
     font-size: 18px;
     font-weight: 700;
     line-height: 24.59px;
@@ -147,7 +161,6 @@ const TextWrapper = styled.div`
   }
   p{
     margin-top: 10px;
-    font-family: Manrope;
     font-size: 13px;
     font-weight: 600;
     line-height: 17.76px;

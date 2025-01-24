@@ -4,33 +4,36 @@ import styled from "styled-components"
 
 export default function ProductPresentation(){
     return (
-        <PresentationWrapper>
-        <ZX9>
-            <ProductImage src={"./assets/home/desktop/image-speaker-zx9.png"}/>
-        <ProductPresentationDescription>
-            <p className="product-name">ZX9 SPEAKER</p>
-            <p>Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
-            <ProductBtn className="prodBtn">SEE PRODUCT</ProductBtn>
-        </ProductPresentationDescription>
-        </ZX9>
-        <ZX7>
-            <p className="product-name">ZX7 SPEAKER</p>
-            <ProductBtn className="prodBtn">
-                SEE PRODUCT
-            </ProductBtn>
-        </ZX7>
-        <YX1>
-            <div className="prod-img">
-
-            </div>
-            <div className="prod-des">
-                <p>YX1 EARPHONES</p>
-                <ProductBtn className="prodBtn"> 
+        <>
+            
+            <PresentationWrapper>
+            <ZX9>
+                <ProductImage src={"./assets/home/desktop/image-speaker-zx9.png"}/>
+            <ProductPresentationDescription>
+                <p className="product-name">ZX9 SPEAKER</p>
+                <p>Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
+                <ProductBtn className="prodBtn">SEE PRODUCT</ProductBtn>
+            </ProductPresentationDescription>
+            </ZX9>
+            <ZX7>
+                <p className="product-name">ZX7 SPEAKER</p>
+                <ProductBtn className="prodBtn">
                     SEE PRODUCT
                 </ProductBtn>
-            </div>
-        </YX1>
-        </PresentationWrapper>
+            </ZX7>
+            <YX1>
+                <div className="prod-img">
+
+                </div>
+                <div className="prod-des">
+                    <p>YX1 EARPHONES</p>
+                    <ProductBtn className="prodBtn"> 
+                        SEE PRODUCT
+                    </ProductBtn>
+                </div>
+            </YX1>
+            </PresentationWrapper>
+        </>
     )
 }           
 
@@ -51,6 +54,7 @@ const PresentationWrapper = styled.div`
     width:327px;
 }
 `
+
 
 const ZX9 = styled.div`
     width: 100%;
