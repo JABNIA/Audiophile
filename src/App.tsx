@@ -6,6 +6,7 @@ import {AudiophileContext} from './components/Context';import Speakers from './c
 import Earphones from './components/Earphones';
 import data from "./data.json"
 import Layout from './components/Layout';
+import Checkout from './components/Checkout';
 
 
 
@@ -101,6 +102,8 @@ function App() {
   ])
   const [checkOut, setCheckOut] = useState<boolean>(false)  
 
+  
+
 
   const data:audiophileData = {
     devices: devices,
@@ -117,12 +120,7 @@ function App() {
     setCheckOut: setCheckOut
   }
   
-  cartIsOpen ? 
-  (document.body.style.overflow = "hidden", 
-    document.body.style.width = "auto"
-    ) : document.body.style.overflow = "auto"
-  
-  checkOut ? document.body.style.backgroundColor = "#F1F1F1"  : document.body.style.backgroundColor = "#FFFFFF"
+
   return (
     <>
       <AudiophileContext.Provider value={data}>
@@ -133,6 +131,7 @@ function App() {
               <Route path='headphones' element={<Headphones />} />  
               <Route path='earphones' element={<Earphones />} />  
               <Route path='speakers' element={<Speakers />} />  
+              <Route path='checkout' element={<Checkout />} />  
             </Route>
           </Routes>    
         </HashRouter>

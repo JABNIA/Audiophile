@@ -3,6 +3,7 @@ import styled from "styled-components";
 import usePageContext from "./Context";
 import { CartItem } from "../App";
 import { Button } from "./header";
+import { Link } from "react-router-dom";
 
 
 
@@ -44,7 +45,7 @@ export default function Cart() {
                 }
                 </CartItemWrapper>
             <p className="total"><span>TOTAL</span> <span className="amount">$ {total}</span></p>
-            <Button className="toCheckout" onClick={() => handleClick()}>CHECKOUT</Button>
+            <Link to="/checkout" onClick={handleClick}><Button className="toCheckout">CHECKOUT</Button></Link>
             </CartComponent>
             </Background>
                 </>
@@ -55,6 +56,13 @@ export default function Cart() {
 
 function QuantityModifer({value}:{value: CartItem}){
     const context = usePageContext()
+
+    context.cart ? 
+    (document.body.style.overflow = "hidden", 
+      document.body.style.width = "auto"
+      ) : document.body.style.overflow = "auto"
+    
+    context.checkOut ? document.body.style.backgroundColor = "#F1F1F1"  : document.body.style.backgroundColor = "#FFFFFF"
 
     return(
         <div style={{position: "relative"}}>
@@ -77,6 +85,9 @@ function QuantityModifer({value}:{value: CartItem}){
 
 
 export const Background = styled.div<{productSelected:boolean}>`
+    position: absolute;
+    top: 0;
+    left: 0;
     background-color: rgba(0,0,0, 0.5);
     height: 100%;
     width: 1440px;
