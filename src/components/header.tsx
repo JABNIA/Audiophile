@@ -119,6 +119,7 @@ export const NewProductDescription = styled.div`
   
   .newProductButton {
     margin-left: 0px;
+    border : none;
   }
 
   @media (max-width: 1440px){

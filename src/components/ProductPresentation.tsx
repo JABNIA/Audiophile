@@ -191,7 +191,6 @@ const ProductBtn = styled.button`
     font-weight: 700;
     line-height: 17.76px;
     letter-spacing: 1px;
-    text-align: left;
     margin-top: 40px;
     border-radius: 0px;
 
@@ -302,6 +301,7 @@ const YX1 = styled.div`
     color: #000;
     margin-top: 40px;
 
+
     .prod-img{
         width: 540px;
         height: 320px;
@@ -325,12 +325,15 @@ const YX1 = styled.div`
         font-weight: 700;
         line-height: 38.25px;
         letter-spacing: 2px;
-        text-align: left;
+    }
+
+    button {
+        color: #000;
     }
 
     button:hover{
         background-color: #000;
-        color: #000;
+        color: #FFFFFF;
     }
 
     .prodBtn{
