@@ -48,7 +48,7 @@ const AboutWrapper = styled.div`
         width: 50%;
         height: 100%;
         border-radius: 5px;
-        background-image: url("./dist/assets/shared/desktop/image-best-gear.jpg");     
+        background-image: url("./assets/shared/desktop/image-best-gear.jpg");     
     }
 
 
