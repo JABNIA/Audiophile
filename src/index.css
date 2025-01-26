@@ -44,19 +44,3 @@
 }
 
 
-
-body * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Manrope;
-}
-
-button {
-  cursor: pointer;
-  text-align: center;
-}
-
-a {
-  text-decoration: none;
-}
