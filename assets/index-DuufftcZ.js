@@ -194,7 +194,6 @@ Please change the parent <Route path="${b}"> to <Route path="${b==="/"?"*":`${b}
     font-weight: 700;
     line-height: 17.76px;
     letter-spacing: 1px;
-    text-align: left;
     margin-top: 40px;
     border-radius: 0px;
 
@@ -301,6 +300,7 @@ Please change the parent <Route path="${b}"> to <Route path="${b==="/"?"*":`${b}
     color: #000;
     margin-top: 40px;
 
+
     .prod-img{
         width: 540px;
         height: 320px;
@@ -324,12 +324,15 @@ Please change the parent <Route path="${b}"> to <Route path="${b==="/"?"*":`${b}
         font-weight: 700;
         line-height: 38.25px;
         letter-spacing: 2px;
-        text-align: left;
+    }
+
+    button {
+        color: #000;
     }
 
     button:hover{
         background-color: #000;
-        color: #000;
+        color: #FFFFFF;
     }
 
     .prodBtn{
@@ -525,6 +528,7 @@ Please change the parent <Route path="${b}"> to <Route path="${b==="/"?"*":`${b}
   
   .newProductButton {
     margin-left: 0px;
+    border : none;
   }
 
   @media (max-width: 1440px){
