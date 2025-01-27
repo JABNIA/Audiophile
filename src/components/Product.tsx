@@ -24,12 +24,12 @@ function Product({id, image, name, description, newProduct}: ProductProps) {
             <p className="product-name">{name}</p>
             <p className="prod-desc">{description}</p>
             
-        <Button className="seeButton" onClick={() => {
-            context.setProductId(id)
-            context.setProductSelected(true)
-        }}>
-            SEE PRODUCT
-        </Button>
+            <Button className="seeButton" onClick={() => {
+                context.setProductId(id)
+                context.setProductSelected(true)
+            }}>
+                SEE PRODUCT
+            </Button>
         </div>
     </ProductWrapper>
   )
@@ -63,11 +63,11 @@ const ProductWrapper = styled.div<{bgImage:string}>`
     .info{
         width: 445px;
         height: 343px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         align-content: center;
-        padding-top: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 126px;
     }
 
     .anonce{

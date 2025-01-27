@@ -53,14 +53,14 @@ export default function Header(){
         </HeaderWrapper>
     )
 }
-
+// ${props.screen > 729 ? "desktop" : props.screen < 729 && props.screen > 336 ? "tablet" : "mobile"}
 
 const HeaderWrapper = styled.header<{pathname:string, selected: boolean, checkout: boolean, screen: number}>`
   width: 1440px;
   height: ${props => props.pathname === "/" ? "729px" : "336px"};
   border-radius: 5px;
   margin: auto;
-  background: ${props => props.pathname === "/" ? "url('./assets/home/desktop/image-header.jpg') no-repeat center / cover" : "#101010"};
+  background: ${props => props.pathname === "/" ? `url('./assets/home/desktop/image-header.jpg') no-repeat center / cover` : "#101010"};
 
   h1{
     text-align: center;
@@ -75,13 +75,13 @@ const HeaderWrapper = styled.header<{pathname:string, selected: boolean, checkou
 
   @media (max-width: 1440px){
     width: 729px;
+    background: ${props => props.pathname === "/" ? `url('./assets/home/tablet/image-header.jpg') no-repeat center / cover` : "#101010"};
   }
 
 
   @media (max-width: 768px){
     width: 375px;
-    background-size: cover;
-    background-position:center;
+    background: ${props => props.pathname === "/" ? `url('./assets/home/mobile/image-header.jpg') no-repeat center / cover` : "#101010"};
   }
 `
 
@@ -212,7 +212,7 @@ export const Button = styled.button`
   background-color: #D87D4A;
   color: #FFF;
   cursor: pointer;
-  border-radius: 0px;
+  border: none;
   font-size: 13px;
   margin-left: 109px;
 
@@ -223,7 +223,5 @@ export const Button = styled.button`
   @media (max-width: 1440px){
     margin-top: 40px;
   }
-
-
 `
 

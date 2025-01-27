@@ -68,6 +68,7 @@ const ZX9 = styled.div`
     gap: 150px;
     padding-left: 175px;
     border-radius: 8px;
+    color: #FFFFFF;
 
     .prodBtn{
        background-color: #000;
@@ -77,6 +78,10 @@ const ZX9 = styled.div`
     .prodBtn:hover{
         background-color: #4c4c4c;
         border: 2px solid #4c4c4c;
+    }
+    
+    button{
+        color: #FFF;
     }
 
     @media (max-width: 1440px){

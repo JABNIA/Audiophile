@@ -1,23 +1,19 @@
 import styled from "styled-components";
 import usePageContext from "./Context";
 import { Link } from "react-router";
-// import useScreenSize from "./customHooks/useScreenSize";
 
 function HomeProductCategoriesSelection(){
   const context = usePageContext()
-  // const screenSize = useScreenSize()
-  // const screen = screenSize.width > 1440 ? "desktop" : screenSize.width > 768 ? "tablet" : "mobile"
 
     return(
       <ShopSelection>
         <ul>
           <SelectionItem>
-            <SelectionImage src={'./assets/shared/desktop/image-category-thumbnail-headphones.png'}/>
+            <SelectionImage src={`./assets/shared/desktop/image-category-thumbnail-headphones.png`}/>
             <TextWrapper>
             <h4>HEADPHONES</h4>
             <p  onClick={()=> {
                     context.setProductSelected(false)
-
                 }}>
               <Link to="/headphones">
                 SHOP <svg width="8" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M1.322 1l5 5-5 5" stroke="#D87D4A" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
@@ -26,7 +22,7 @@ function HomeProductCategoriesSelection(){
             </TextWrapper>
           </SelectionItem>
           <SelectionItem>
-          <SelectionImage src={"./assets/shared/desktop/image-category-thumbnail-speakers.png"}/>
+          <SelectionImage src={`./assets/shared/desktop/image-category-thumbnail-speakers.png`}/>
           <TextWrapper>
             <h4>SPEAKERS</h4>
             <p  onClick={()=> {
@@ -39,7 +35,7 @@ function HomeProductCategoriesSelection(){
           </TextWrapper>
           </SelectionItem>
           <SelectionItem>
-          <SelectionImage src={"./assets/shared/desktop/image-category-thumbnail-earphones.png"}/>
+          <SelectionImage src={`./assets/shared/desktop/image-category-thumbnail-earphones.png`}/>
           <TextWrapper>
           <h4>EARPHONES</h4>
             <p  onClick={()=> {
