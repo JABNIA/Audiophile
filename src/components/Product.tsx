@@ -65,7 +65,7 @@ const ProductWrapper = styled.div<{bgImage:string}>`
         height: 343px;
         align-content: center;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
         margin-top: 126px;
     }
