@@ -1207,9 +1207,9 @@ Please change the parent <Route path="${b}"> to <Route path="${b==="/"?"*":`${b}
     .info{
         width: 445px;
         height: 343px;
-        align-content: center;
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
         align-items: center;
         margin-top: 126px;
     }
