@@ -1209,7 +1209,7 @@ Please change the parent <Route path="${b}"> to <Route path="${b==="/"?"*":`${b}
         height: 343px;
         align-content: center;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
         margin-top: 126px;
     }
